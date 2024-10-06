@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+    <heaad>
+        <title>Tidal login page</title>
+        <link href="https://db.onlinewebfonts.com/c/99311fcca5d5fb24aeb00da0cd9d0579?family=Nationale+Regular" rel="stylesheet">
+        <link href="https://db.onlinewebfonts.com/c/78f20327b03c104c13e3821a03c06ce9?family=Nationale+Bold" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <style>
+           
+            .google-button, .facebook-button, .apple-button, .x-button,.Continue-button{
+                display: block;
+            }
+
+            .body{
+                background-color: rgba(18,22,29,255);
+            }
+
+            .sign-sign{
+                margin: auto;
+                font-family: Nationale bold,helvetica;
+                display: flex;
+                justify-content: center;
+                color: white;
+                font-size: 13px;
+                margin-bottom: 20px;
+                margin-top: 95px;
+            }
+
+             .main-details{
+                border: none;
+                border-radius: 3px;
+                width: 235px;
+                height:310px;
+                display: flex;
+                justify-content: center;
+                margin: auto;
+                background-color: rgba(28,32,38,255);
+            }
+
+            .login-name{
+                background-color: rgba(28,32,38,255);
+                outline: none;
+                border-bottom: solid gray;
+                border-right: none;
+                border-left: none;
+                border-top: none;
+                border-width: 1px;
+                margin-left: 12px;
+                font-size: 10px;
+                margin-bottom: 7px;
+                width: 170px;
+                color: white;
+                padding-bottom: 3px;
+                margin-top: 0px;
+            }
+
+            .login-name:focus{
+                border-color: rgb(255, 230, 0);
+            }
+
+            .user-name{
+                font-size: 7px;
+                font-family:Nationale regular,arial;
+                color: white;
+                margin-top: 30px;
+                margin-left: 15px;
+                margin-bottom: 0px;
+                padding-bottom: 5px;
+                width:180px;
+
+            }
+
+            .google-button, .facebook-button, .apple-button, .x-button, .Continue-button{
+                background-color: rgba(28,32,38,255);
+                border: solid white;
+                color: white;
+                margin: 5px;
+                width: 180px;
+                height: 28px;
+                margin-bottom: 10px;
+                margin-left: 13px;
+                border-radius: 4px;
+                border-width: thin;
+                font-size: 9px;
+                font-family: Nationale regular,helvetica;
+                font-weight:600;
+                padding-right: 10px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+            }
+
+            .google-button:hover{
+                cursor: pointer;
+                opacity: 0.4;
+                background-color: (60,63,68,255);
+               
+            }
+
+            .facebook-button:hover{
+                cursor: pointer;
+                opacity: 0.4;
+                background-color: (60,63,68,255);
+            }
+
+            .apple-button:hover{
+                cursor: pointer;
+                opacity: 0.4;
+                background-color: (60,63,68,255);
+            }
+
+            .x-button:hover{
+                cursor: pointer;
+                opacity: 0.4;
+                background-color: (60,63,68,255);
+            }
+
+            .Continue-button{
+                background-color: white;
+                border: none;
+                color: rgba(57,59,63,255);
+            }
+
+            .Continue-button:hover{
+                opacity:0.7;
+                cursor: pointer;
+                transition-duration: 0.4s;
+            }
+
+            .or-text{
+                font-family: Nationale regular, arial;
+                font-size: 7px;
+                color: white;
+                text-align: center;
+                margin-top: 14px;
+                margin-bottom: 14px;
+            }
+
+            .google-img{
+                vertical-align: middle;
+            }
+            
+            .google-big{
+                text-align: center;
+                vertical-align: middle;
+            }
+
+            .link{
+                color: white;
+                text-align: right;
+                display: inline;
+                font-family: Nationale regular;
+                vertical-align: middle;
+                margin: 10px;
+                font-size: 7px;
+                justify-content: right;
+            }
+
+            .eng-button{
+                font-family: Nationale 600,arial;
+                background-color: rgba(28,32,38,265);
+                border: solid, white;
+                border-width: 1px;
+                border-radius: 2px;
+                color: white;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                padding-left: 5px;
+                padding-right: 5px;
+                font-size: 11px;
+            }
+            
+            .cpy-text{
+                display: inline-block;
+                font-family: Nationale regular;
+                font-size: 7px;
+                color: white;
+                vertical-align: middle;
+
+            }
+
+            .copy-box, .footer-box{
+                display: inline;
+            }
+
+            .copy-box{
+                margin-left: 10px;
+                font-size: 4px;
+                color: rgba(175, 175, 182, 0.9);
+            }
+
+            .footer-box{
+                margin-left: 355px;
+            }
+
+            .line{
+                border-color: rgb(32, 34, 37);
+                margin-top: 15px;
+            }
+
+            .link:hover{
+                text-decoration: underline;
+                cursor: pointer;
+                transition-duration: 0.4s;
+            }
+
+            .eng-button:hover{
+                cursor: pointer;
+
+            }
+        </style>
+    </heaad>
+    <body class="body">
+        <h2 class="sign-sign">Sign up or log in</h2>
+        <div class="main-details">
+            <div>
+                <p class="user-name">Email or username</p>
+                <input class="login-name" type="email" placeholder="Enter your email or username">
+                <button class="Continue-button">Continue</button>
+                <div>
+                    <p class="or-text">or</p>
+                </div>
+                <div class="all-buttons">
+                    <div class="google-big">
+                    <button class="google-button">Continue with Google</button>
+                    </div>
+                    <button class="facebook-button">Continue with Facebook</button>
+                    <button class="apple-button">Continue with Apple</button>
+                    <button class="x-button">Contniue with X</button>
+                </div>
+            </div>
+        </div>
+
+        <hr class="line">
+        <div>
+            <div class="copy-box">
+                <p class="cpy-text">© 2024 TIDAL Music AS</p>
+            </div>
+            <div class="footer-box">
+                <a class="link">Privacy Notice</a>
+                <a class="link">Terms and Conditions</a>
+                <a class="link">Cookie Settings</a>
+                <a class="link">Accessibility Statement</a>
+                <a class="link">Contact</a>
+            </div>
+            
+            
+            <button class="eng-button">English</button>
+        </div>
+    </body>
+ </html>
